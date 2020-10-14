@@ -11,6 +11,18 @@ window.addEventListener('DOMContentLoaded', function () {
         });
     };
 
+    var x, y;
+    var ball = document.querySelector('.circle');
+    window.addEventListener('mousemove', mMove);
+    function mMove(e) {
+        x = e.pageX;
+        y = e.pageY;
+
+        ball.style.top = "calc(" + y + "px - 15px)";
+        ball.style.left = "calc(" + x + "px - 15px)";
+
+
+    }
 
     var benefits = document.querySelectorAll(".benefits > ul > li");
     var beneBtn = document.querySelectorAll(".benefits > ul > li >img");

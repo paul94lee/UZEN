@@ -14,6 +14,18 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         });
     };
+    var x, y;
+    var ball = document.querySelector('.circle');
+    window.addEventListener('mousemove', mMove);
+    function mMove(e) {
+        x = e.pageX;
+        y = e.pageY;
+
+        ball.style.top = "calc(" + y + "px - 15px)";
+        ball.style.left = "calc(" + x + "px - 15px)";
+
+
+    }
 
     var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
     var options = { //지도를 생성할 때 필요한 기본 옵션

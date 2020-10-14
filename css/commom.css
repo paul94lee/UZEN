@@ -4,6 +4,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     width: 100%;
     position: relative;
@@ -103,7 +106,7 @@ header {
 }
 .inner ul li {
     margin: 0px 20px;
-    padding:0;
+    padding: 0;
     float: left;
     display: block;
     text-transform: uppercase;
@@ -180,4 +183,17 @@ footer .copy {
     left: 3%;
     top: 50px;
     font-size: 10px;
+}
+.circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    z-index: 1;
+    border: 2px solid #999;
+    border-radius: 80%;
+    transition: 0.08s;
+    pointer-events: none;
 }

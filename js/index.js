@@ -6,16 +6,17 @@ window.addEventListener('DOMContentLoaded', function () {
     var imgMove = document.querySelector('.img-content-wrap');
     var txtMove = document.querySelector('.txt-content-wrap');
     var indx = document.querySelector('.idx-wrap');
-    var ball = document.querySelector('.circle');
-    var x, y;
+
 
     window.addEventListener('mousewheel', swift);
 
+    var x, y;
+    var ball = document.querySelector('.circle');
     window.addEventListener('mousemove', mMove);
     function mMove(e) {
-        x = e.clientX;
-        y = e.clientY;
-    
+        x = e.pageX;
+        y = e.pageY;
+
         ball.style.top = "calc(" + y + "px - 15px)";
         ball.style.left = "calc(" + x + "px - 15px)";
 

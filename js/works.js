@@ -16,6 +16,18 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         });
     };
+    var x, y;
+    var ball = document.querySelector('.circle');
+    window.addEventListener('mousemove', mMove);
+    function mMove(e) {
+        x = e.pageX;
+        y = e.pageY;
+
+        ball.style.top = "calc(" + y + "px - 15px)";
+        ball.style.left = "calc(" + x + "px - 15px)";
+
+
+    }
 
     var listBtn = document.querySelectorAll('.represent div img');
     var thum = document.querySelector('.works-thum');
