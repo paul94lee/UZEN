@@ -1,0 +1,176 @@
+@import url(commom.css);
+body {
+    color: #000;
+    background-color: #fff;
+    header * {
+        color: #000 !important;
+    }
+    header{    
+        ul {
+            li.active {
+                a {
+                    border-bottom: 2px solid #000;
+                }
+            }
+        }
+    }
+
+
+    main {
+        background: url(../img/culture/bg-light.png) center top no-repeat;
+
+        .main-content-wrap {
+            max-width: 90%;
+            .hero {
+                width: 100%;
+                padding-top: 200px;
+                margin: 0 auto;
+                margin-bottom: 100px;
+                h1 {
+                    font-size: 85px;
+                    line-height: 90px;
+                    white-space: pre-line;
+                }
+                p {
+                    margin-top: 50px;
+                    width: 50%;
+                    font-size: 15px;
+                    color: #333;
+                }
+            }
+            .cul-wrap {
+                width: 96%;
+                margin: 0 auto;
+                position: relative;
+                .cul-con {
+                    margin-bottom: 40px;
+                    .item-image {
+                        transition: 0.3s;
+                        clip-path: inset(8px 8px 8px 8px);
+                        position: relative;
+                        // padding-top:calc(100% / 16*6);
+                        overflow: hidden;
+                        img {
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                    .item-image:hover {
+                        clip-path: inset(0 0 0 0);
+                    }
+                    .item-caption {
+                        margin: 10px 0;
+                        h2 {
+                            color: #333;
+                            position: relative;
+                            font-size: 18px;
+                            display: block;
+                            transition: 0.3s;
+                            margin: 0;
+                        }
+                        h4::after {
+                            display: inline-block;
+                            content: "";
+                            width: 16px;
+                            height: 1px;
+                            background: #999;
+                            margin: 6px 10px;
+                            transition: 0.3s;
+                        }
+                        h4 {
+                            color: #999;
+                            display: inline-block;
+                            font-size: 14px;
+                            font-weight: 300;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+            h2 {
+                color: #000;
+            }
+            .wrap1 {
+                padding: 0 120px;
+                flex-wrap: wrap;
+                .cul-con {
+                    vertical-align: center;
+                    width: 320px;
+                    .item-image {
+                        height: 300px;
+                        width: 300px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            .wrap2 {
+                margin-top: 150px;
+                height: 1000px;
+                .cul-con {
+                    position: absolute;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .cul1 {
+                    top: 0;
+                    left: 0;
+                    .item-image {
+                        height: 330px;
+                        width: 240px;
+                        img {
+                            width: auto;
+                            height: 100%;
+                        }
+                    }
+                }
+                .cul2 {
+                    top: 10%;
+                    left: 30%;
+                    .item-image {
+                        height: 300px;
+                        width: 350px;
+                    }
+                }
+                .cul3 {
+                    top: -10%;
+                    right: 0;
+                    .item-image {
+                        height: 220px;
+                        width: 370px;
+                    }
+                }
+                .cul4 {
+                    top: 50%;
+                    left: 5%;
+                    .item-image {
+                        height: 320px;
+                        width: 370px;
+                    }
+                }
+                .cul5 {
+                    top: 65%;
+                    left: 46%;
+                    .item-image {
+                        height: 250px;
+                        width: 350px;
+                    }
+                }
+                .cul6 {
+                    top: 25%;
+                    right: 3%;
+                    .item-image {
+                        height: 320px;
+                        width: 380px;
+                    }
+                }
+            }
+        }
+    }
+}

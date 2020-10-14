@@ -1,0 +1,37 @@
+@import url(commom.css);
+
+body {
+    footer {
+        height: 140px;
+        position: relative;
+        .go-top {
+            position: absolute;
+            right: 3%;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            background-image: url("../img/t-arrow.png");
+            background-repeat: no-repeat;
+            background-size: 20px 13px;
+            z-index: 1;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .copy {
+            position: absolute;
+            left: 3%;
+            top: 50px;
+            font-size: 10px;
+        }
+    }
+
+    footer.ff {
+        .go-top {
+            background: url("../img/t-arrow-white.png");
+            background-repeat: no-repeat;
+            background-size: 20px 13px;
+        }
+    }
+}

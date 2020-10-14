@@ -1,0 +1,74 @@
+@import url(commom.css);
+$i: 0;
+$b:contactus;
+
+body {
+    box-sizing: border-box;
+    header * {
+        color: black;
+        #logo {
+            a {
+                display: inline-block;
+                width: 82px;
+                height: 24px;
+                background-image: url(../img/index/orange_logo.png);
+                background-repeat: no-repeat;
+            }
+        }
+        ul {
+            li {
+                position: relative;
+            }
+            li {
+                overflow: hidden;
+                div {
+                    transition: 0.5s;
+                }
+                @each $obj in about, product, works, $b, culture, career {
+                    .#{$obj}:before {
+                        content: "#{$obj}";
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
+                    }
+                }
+            }
+            li div:hover {
+                transform: translateY(-100%);
+            }
+
+            li.active {
+                a {
+                    border-bottom: 1px solid #000;
+                }
+            }
+        }
+        ul:last-of-type {
+            li:last-of-type div:hover {
+                transform: none;
+            }
+        }
+    }
+
+    header.aa * {
+        color: white;
+        #logo {
+            a {
+                display: inline-block;
+                width: 82px;
+                height: 24px;
+                background-image: url(../img/index/white_logo.png);
+                background-repeat: no-repeat;
+            }
+        }
+        ul {
+            li {
+                li.active {
+                    a {
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+}

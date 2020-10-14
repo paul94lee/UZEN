@@ -1,0 +1,306 @@
+@import url(commom.css);
+body {
+  color: #000;
+  background-color: #fff;
+}
+
+body header * {
+  color: #000 !important;
+}
+
+body header ul li.active a {
+  border-bottom: 2px solid #000;
+}
+
+body main {
+  background: url(../img/career/bg-light.png) center top no-repeat;
+}
+
+body main .main-content-wrap {
+  max-width: 90%;
+}
+
+body main .main-content-wrap .hero {
+  width: 100%;
+  padding-top: 200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+body main .main-content-wrap .hero h1 {
+  font-size: 85px;
+  line-height: 90px;
+  color: #000;
+}
+
+body main .main-content-wrap .hero p {
+  margin-top: 50px;
+  width: 50%;
+  font-size: 15px;
+  color: #333;
+}
+
+body main .main-content-wrap .content h2,
+body main .main-content-wrap .content h3,
+body main .main-content-wrap .content h4 {
+  color: #000;
+}
+
+body main .main-content-wrap .content .telent .talent-type div {
+  margin-top: 50px;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .main-content-wrap .content .telent .talent-type div img {
+  width: 50%;
+  height: auto;
+}
+
+body main .main-content-wrap .content .telent .talent-type div h3 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+body main .main-content-wrap .content .benefits > ul {
+  border-top: 1px solid #000;
+}
+
+body main .main-content-wrap .content .benefits > ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+}
+
+body main .main-content-wrap .content .benefits > ul > li h3 {
+  width: 30%;
+}
+
+body main .main-content-wrap .content .benefits > ul > li ul {
+  max-height: 0;
+  -webkit-transition: max-height .5s linear;
+  transition: max-height .5s linear;
+  overflow: hidden;
+  width: 60%;
+}
+
+body main .main-content-wrap .content .benefits > ul > li ul li {
+  margin: 5px 0;
+  color: #333;
+}
+
+body main .main-content-wrap .content .benefits > ul > li img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 20px;
+  height: auto;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+body main .main-content-wrap .content .benefits > ul > li.active ul {
+  max-height: 400px;
+}
+
+body main .main-content-wrap .content .benefits > ul > li img.active {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap {
+  position: relative;
+  height: 300px;
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process1 {
+  position: absolute;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 900;
+  left: 0;
+  top: 0;
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process1 h3 {
+  font-size: 20px;
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process1 h3 span {
+  position: relative;
+  font-size: 40px;
+  font-style: italic;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process1 h3 span:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #000;
+  position: absolute;
+  left: -15px;
+  top: calc(50% - 5px);
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process1 p {
+  display: inline-block;
+  color: #333;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process2 {
+  position: absolute;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 900;
+  left: 25%;
+  top: 50%;
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process2 h3 {
+  font-size: 20px;
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process2 h3 span {
+  position: relative;
+  font-size: 40px;
+  font-style: italic;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process2 h3 span:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #000;
+  position: absolute;
+  left: -15px;
+  top: calc(50% - 5px);
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process2 p {
+  display: inline-block;
+  color: #333;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process3 {
+  position: absolute;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 900;
+  left: 50%;
+  top: 0;
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process3 h3 {
+  font-size: 20px;
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process3 h3 span {
+  position: relative;
+  font-size: 40px;
+  font-style: italic;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process3 h3 span:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #000;
+  position: absolute;
+  left: -15px;
+  top: calc(50% - 5px);
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process3 p {
+  display: inline-block;
+  color: #333;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process4 {
+  position: absolute;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 900;
+  left: 75%;
+  top: 50%;
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process4 h3 {
+  font-size: 20px;
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process4 h3 span {
+  position: relative;
+  font-size: 40px;
+  font-style: italic;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process4 h3 span:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #000;
+  position: absolute;
+  left: -15px;
+  top: calc(50% - 5px);
+}
+
+body main .main-content-wrap .content .hire-process .process-wrap .process4 p {
+  display: inline-block;
+  color: #333;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+body main .main-content-wrap .content .hire-process .recruit {
+  width: 100%;
+}
+
+body main .main-content-wrap .content .hire-process .recruit button {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  font-family: "Nanum Gothic", sans-serif;
+  padding: 20px 30px;
+  border: none;
+  background-color: #ed7d31;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+}
+/*# sourceMappingURL=career.css.map */

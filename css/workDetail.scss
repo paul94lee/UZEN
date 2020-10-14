@@ -1,0 +1,153 @@
+@import url(commom.css);
+@mixin wid60 {
+    width: 60%;
+    margin: 0 auto;
+}
+body {
+    color: #ddd;
+
+    // background: #14181d;
+    background: #000;
+    header * {
+        color: white !important;
+        ul {
+            li.active {
+                a {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+    }
+    main {
+        width: 100%;
+        .workimg {
+            height: 100vh;
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            figure {
+                img {
+                    width: 110%;
+                    height: 110%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            .title-wrap {
+                color: #fff;
+                font-size: 80px;
+                position: absolute;
+                top: 42%;
+                right: 19%;
+                font-weight: 700;
+                .subtitle {
+                    font-weight: 500;
+                    font-size: 18px;
+                    text-align: end;
+                }
+            }
+        }
+        .con-info {
+            .work-sum {
+                @include wid60();
+                padding: 70px 0;
+                > p {
+                    width: 40%;
+                    white-space: pre-line;
+                    font-size: 25px;
+                }
+                div {
+                    width: 60%;
+                    h2 {
+                        font-size: 48px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                    ul {
+                        li {
+                            color: #888;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .screenshot {
+            background: #343a40;
+            .s-shot-wrap {
+                padding-top: 140px;
+                @include wid60();
+                h2 {
+                    color: #fff;
+                    padding-bottom: 50px;
+                }
+                .img-wrap {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    figure {
+                        width: 28%;
+                        border: 7px solid #000;
+                        border-radius: 30px;
+                        overflow: hidden;
+                        margin-bottom: 100px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .icon {
+            background: #2b3138;
+            .icon-wrap {
+                padding-top: 140px;
+                padding-bottom: 50px;
+                @include wid60();
+                h2 {
+                    color: #fff;
+                    padding-bottom: 50px;
+                }
+                figure {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .next-work {
+            height: 330px;
+            background-color: #111;
+            .next-wrap {
+                padding: 140px 0;
+                @include wid60();
+                p {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+                a {
+                    font-size: 80px;
+                    font-weight: 900;
+                    color: #111;
+                    // text-shadow: inset 0 0 2px #fff;
+                    -webkit-text-stroke: 1px #fff;
+                    -ms-filter: -ms-drop-shadow(0px 0px 2px #fff);
+                    transition: all 0.2s ease-in-out;
+                }
+                a:hover{
+                    color:#c6c7cc;
+                    -webkit-text-stroke: 1px #c6c7cc;
+                }
+            }
+        }
+    }
+    footer {
+        background-color: #111;
+    }
+}

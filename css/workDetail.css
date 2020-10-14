@@ -1,0 +1,177 @@
+@import url(commom.css);
+body {
+  color: #ddd;
+  background: #000;
+}
+
+body header * {
+  color: white !important;
+}
+
+body header * ul li.active a {
+  border-bottom: 1px solid #fff;
+}
+
+body main {
+  width: 100%;
+}
+
+body main .workimg {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+body main .workimg figure img {
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body main .workimg .title-wrap {
+  color: #fff;
+  font-size: 80px;
+  position: absolute;
+  top: 42%;
+  right: 19%;
+  font-weight: 700;
+}
+
+body main .workimg .title-wrap .subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: end;
+}
+
+body main .con-info .work-sum {
+  width: 60%;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+body main .con-info .work-sum > p {
+  width: 40%;
+  white-space: pre-line;
+  font-size: 25px;
+}
+
+body main .con-info .work-sum div {
+  width: 60%;
+}
+
+body main .con-info .work-sum div h2 {
+  font-size: 48px;
+}
+
+body main .con-info .work-sum div p {
+  font-size: 16px;
+}
+
+body main .con-info .work-sum div ul li {
+  color: #888;
+  font-size: 16px;
+}
+
+body main .screenshot {
+  background: #343a40;
+}
+
+body main .screenshot .s-shot-wrap {
+  padding-top: 140px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+body main .screenshot .s-shot-wrap h2 {
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+body main .screenshot .s-shot-wrap .img-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main .screenshot .s-shot-wrap .img-wrap figure {
+  width: 28%;
+  border: 7px solid #000;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+body main .screenshot .s-shot-wrap .img-wrap figure img {
+  width: 100%;
+  height: 100%;
+}
+
+body main .icon {
+  background: #2b3138;
+}
+
+body main .icon .icon-wrap {
+  padding-top: 140px;
+  padding-bottom: 50px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+body main .icon .icon-wrap h2 {
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+body main .icon .icon-wrap figure {
+  width: 100%;
+}
+
+body main .icon .icon-wrap figure img {
+  width: 100%;
+}
+
+body main .next-work {
+  height: 330px;
+  background-color: #111;
+}
+
+body main .next-work .next-wrap {
+  padding: 140px 0;
+  width: 60%;
+  margin: 0 auto;
+}
+
+body main .next-work .next-wrap p {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+body main .next-work .next-wrap a {
+  font-size: 80px;
+  font-weight: 900;
+  color: #111;
+  -webkit-text-stroke: 1px #fff;
+  -ms-filter: -ms-drop-shadow(0px 0px 2px #fff);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+body main .next-work .next-wrap a:hover {
+  color: #c6c7cc;
+  -webkit-text-stroke: 1px #c6c7cc;
+}
+
+body footer {
+  background-color: #111;
+}
+/*# sourceMappingURL=workDetail.css.map */

@@ -1,0 +1,199 @@
+@import url(commom.css);
+$black: #000;
+@mixin piCo {
+    color: #555;
+}
+@mixin bor($col) {
+    border: 1px solid $col;
+}
+@mixin process() {
+    position: absolute;
+    font-family: "Nanum Gothic", sans-serif;
+
+    font-weight: 900;
+    h3 {
+        font-size: 20px;
+        span {
+            position: relative;
+            font-size: 40px;
+            font-style: italic;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        span:before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: #000;
+            position: absolute;
+            left: -15px;
+            top: calc(50% - 5px);
+        }
+    }
+    p {
+        display: inline-block;
+        color: #333;
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+body {
+    color: #000;
+    background-color: #fff;
+
+    // color: #000;
+
+    header * {
+        color: #000 !important;
+    }
+    header {
+        ul {
+            li.active {
+                a {
+                    border-bottom: 2px solid #000;
+                }
+            }
+        }
+    }
+
+    main {
+        background: url(../img/career/bg-light.png) center top no-repeat;
+
+        .main-content-wrap {
+            max-width: 90%;
+            .hero {
+                width: 100%;
+                padding-top: 200px;
+                margin: 0 auto;
+                margin-bottom: 100px;
+                h1 {
+                    font-size: 85px;
+                    line-height: 90px;
+                    color: #000;
+                }
+                p {
+                    margin-top: 50px;
+                    width: 50%;
+                    font-size: 15px;
+                    color: #333;
+                }
+            }
+            .content {
+                h2,
+                h3,
+                h4 {
+                    color: $black;
+                }
+                // li,p{
+                //     @include piCo;
+                // }
+
+                .telent {
+                    .talent-type {
+                        div {
+                            margin-top: 50px;
+                            width: 20%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 50%;
+                                height: auto;
+                            }
+                            h3 {
+                                margin-top: 20px;
+                                text-align: center;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                .benefits {
+                    > ul {
+                        border-top: 1px solid #000;
+                        > li {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            position: relative;
+                            padding: 20px 0;
+                            border-bottom: 1px solid #000;
+                            h3 {
+                                width: 30%;
+                            }
+                            ul {
+                                max-height: 0;
+                                transition: max-height .5s linear;
+                                overflow: hidden;
+                                width: 60%;
+                                li {
+                                    margin: 5px 0;
+                                    color: #333;
+                                }
+                            }
+                            img {
+                                transform: rotate(180deg);
+                                width: 20px;
+                                height: auto;
+                                position: absolute;
+                                right: 10px;
+                                top: 10px;
+                            }
+                        }
+                        > li.active ul {
+                            max-height: 400px;
+                        }
+                        > li img.active {
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+
+                .hire-process {
+                    .process-wrap {
+                        position: relative;
+                        height: 300px;
+
+                        .process1 {
+                            @include process();
+                            left: 0;
+                            top: 0;
+                        }
+                        .process2 {
+                            @include process();
+                            left: 25%;
+                            top: 50%;
+                        }
+                        .process3 {
+                            @include process();
+                            left: 50%;
+                            top: 0;
+                        }
+                        .process4 {
+                            @include process();
+                            left: 75%;
+                            top: 50%;
+                        }
+                    }
+                    .recruit {
+                        width: 100%;
+                        button {
+                            width: 200px;
+                            display: block;
+                            margin: 0 auto;
+                            font-family: "Nanum Gothic", sans-serif;
+                            padding: 20px 30px;
+                            border: none;
+                            background-color: #ed7d31;
+                            color: #fff;
+                            font-size: 15px;
+                            font-weight: 800;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

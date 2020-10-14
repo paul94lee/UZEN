@@ -1,0 +1,181 @@
+@import url(commom.css);
+body {
+  color: #ddd;
+  background: #000;
+}
+
+body header * {
+  color: white !important;
+}
+
+body header * ul li.active a {
+  border-bottom: 1px solid #fff;
+}
+
+body main {
+  width: 100%;
+}
+
+body main .productimg {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+body main .productimg figure img {
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body main .productimg .title-wrap {
+  color: #fff;
+  font-size: 80px;
+  position: absolute;
+  top: 42%;
+  right: 19%;
+  font-weight: 700;
+}
+
+body main .con-info .product-sum {
+  width: 60%;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+body main .con-info .product-sum > p {
+  width: 40%;
+  white-space: pre-line;
+  font-size: 25px;
+}
+
+body main .con-info .product-sum div {
+  width: 60%;
+}
+
+body main .con-info .product-sum div h2 {
+  font-size: 48px;
+}
+
+body main .con-info .product-sum div p {
+  font-size: 16px;
+}
+
+body main .con-info .product-sum div ul li {
+  color: #888;
+  font-size: 16px;
+}
+
+body main .line {
+  background: #343a40;
+}
+
+body main .line .line-up {
+  padding-top: 140px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+body main .line .line-up h2 {
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+body main .line .line-up figure {
+  width: 60%;
+  padding-bottom: 100px;
+}
+
+body main .line .line-up figure img {
+  width: 100%;
+  height: 100%;
+}
+
+body main .features {
+  background: #2b3138;
+}
+
+body main .features > div {
+  padding-top: 140px;
+  padding-bottom: 50px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+body main .features > div h2 {
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+body main .features > div figure {
+  width: 60%;
+  padding-bottom: 100px;
+}
+
+body main .features > div figure img {
+  width: 100%;
+  height: 100%;
+}
+
+body main .advantages {
+  background-color: #343a40;
+}
+
+body main .advantages .advan-wrap {
+  padding: 140px 0;
+  width: 60%;
+  margin: 0 auto;
+}
+
+body main .advantages .advan-wrap h2 {
+  color: #fff;
+}
+
+body main .advantages .advan-wrap ol li {
+  color: #eee;
+  padding-bottom: 20px;
+}
+
+body main .advantages .advan-wrap ol li h3 {
+  font-size: 20px;
+}
+
+body main .next-product {
+  height: 330px;
+  background-color: #111;
+}
+
+body main .next-product .next-wrap {
+  padding: 140px 0;
+  width: 60%;
+  margin: 0 auto;
+}
+
+body main .next-product .next-wrap p {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+body main .next-product .next-wrap a {
+  font-size: 80px;
+  font-weight: 900;
+  color: #111;
+  -webkit-text-stroke: 1px #fff;
+  -ms-filter: -ms-drop-shadow(0px 0px 2px #fff);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+body main .next-product .next-wrap a:hover {
+  color: #c6c7cc;
+  -webkit-text-stroke: 1px #c6c7cc;
+}
+
+body footer {
+  background-color: #111;
+}
+/*# sourceMappingURL=productDetail.css.map */

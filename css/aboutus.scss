@@ -1,0 +1,161 @@
+@import url(commom.css);
+body {
+    color: #ddd;
+    background-color: #111;
+    header * {
+        color: white;
+        ul {
+            li.active {
+                a {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+    }
+    .main {
+        background: url(../img/aboutus/about_bg.jpg) center top no-repeat;
+
+        .main-content-wrap {
+            .hero {
+                width: 100%;
+                padding-top: 200px;
+                h1 {
+                    color:#a794e4;
+                    background: -webkit-linear-gradient(45deg, #a794e4, #b95851, #58395b 50%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 85px;
+                    line-height: 90px;
+                    white-space: pre-line;
+                    background-image: url(https://media3.giphy.com/media/3otO6NFBIAFg2vPZuM/giphy.gif?cid=ecf05e47wwtjnv3f5twb99v0m6ar6fa0uynxje1jxg1j1qst&rid=giphy.gif);
+                    background-size: 120%;
+                    background-position: center center;
+                }
+            }
+            .content {
+                .intro {
+                    display: flex;
+                    justify-content: space-between;
+                    div {
+                        width: 48%;
+                    }
+                }
+                .vision {
+                    .vision-flex {
+                        display: flex;
+                        justify-content: space-between;
+                        div {
+                            width: 30%;
+                            h3 {
+                                margin-bottom: 14px;
+                            }
+                        }
+                    }
+                }
+                .service {
+                    ul {
+                        border-bottom: 0.5px solid #555;
+                        width: 100%;
+                        li {
+                            display: flex;
+                            border-top: 0.5px solid #555;
+                            strong {
+                                display: inline-block;
+                                padding: 40px 0;
+                                width: 40%;
+                                font-size: 20px;
+                                font-weight: 600;
+                                color: #aaa;
+                            }
+                            p {
+                                padding: 40px 0;
+                                display: inline-block;
+                                font-size: 15px;
+                                width: 60%;
+                                font-weight: 400;
+                                color: #888;
+                            }
+                        }
+                    }
+                }
+                .client {
+                    ul {
+                        flex-wrap: wrap;
+                        li {
+                            display: block;
+                            width: 20%;
+                            height: 100px;
+                            min-height: 100px;
+                            img {
+                                width: 100%;
+                                padding: 1px;
+                                height: 100%;
+                                filter: brightness(0.4);
+                            }
+                            img:hover {
+                                filter:brightness(0.8);
+                            }
+                        }
+                    }
+                }
+                .history {
+                    ul {
+                        border-bottom: 0.5px solid #555;
+                        width: 100%;
+                        li {
+                            position: relative;
+                            align-items: center;
+                            border-top: 0.5px solid #555;
+                            span {
+                                position: relative;
+                                display: inline-block;
+                                padding: 20px 0;
+                                width: 15%;
+                                font-size: 20px;
+                                font-weight: 600;
+                                color: #eee;
+                                z-index: 2;
+                            }
+                            span:nth-of-type(2) a {
+                                font-size: 14px;
+                                color: #eee;
+                            }
+                            p {
+                                position: relative;
+                                padding: 20px 0;
+                                display: inline-block;
+                                font-size: 15px;
+                                width: 70%;
+                                font-weight: 400;
+                                color: #eee;
+                                z-index: 2;
+                            }
+                            div {
+                                height: 0;
+                                position: absolute;
+                                top: 50%;
+                                bottom: -2px;
+                                transform-origin: 50% 0;
+                                transform: translateY(-50%);
+                            }
+                        }
+                        li:hover div {
+                            left: 0;
+                            width: 100%;
+                            height: 105%;
+                            background-image: linear-gradient(to right, #cc0016 0%, #8700ff 100%);
+                            z-index: 1;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//IE
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+ 
+}

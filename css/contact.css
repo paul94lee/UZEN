@@ -1,0 +1,127 @@
+@import url(commom.css);
+body {
+  color: #000;
+  background-color: #fff;
+}
+
+body main {
+  background: url(../img/culture/bg-light.png) center top no-repeat;
+}
+
+body main .main-content-wrap {
+  max-width: 90%;
+}
+
+body main .main-content-wrap .hero {
+  width: 100%;
+  padding-top: 200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+body main .main-content-wrap .hero h1 {
+  font-size: 85px;
+  line-height: 90px;
+  white-space: pre-line;
+}
+
+body main .main-content-wrap .hero p {
+  margin-top: 50px;
+  width: 50%;
+  font-size: 15px;
+  color: #333;
+}
+
+body main .main-content-wrap .cul-wrap {
+  width: 96%;
+  margin: 0 auto;
+  position: relative;
+}
+
+body main .main-content-wrap .cul-wrap .cul-con {
+  margin-bottom: 40px;
+}
+
+body main .main-content-wrap .cul-wrap .cul-con .item-image {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-clip-path: inset(8px 8px 8px 8px);
+          clip-path: inset(8px 8px 8px 8px);
+  position: relative;
+  overflow: hidden;
+}
+
+body main .main-content-wrap .cul-wrap .cul-con .item-image img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body main .main-content-wrap .cul-wrap .cul-con .item-image:hover {
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+}
+
+body main .main-content-wrap .cul-wrap .cul-con .item-caption {
+  margin: 10px 0;
+}
+
+body main .main-content-wrap .cul-wrap .cul-con .item-caption h2 {
+  color: #333;
+  position: relative;
+  font-size: 18px;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0;
+}
+
+body main .main-content-wrap h2 {
+  color: #000;
+}
+
+body main .main-content-wrap .wrap2 {
+  margin-top: 200px;
+  height: 500px;
+}
+
+body main .main-content-wrap .wrap2 .cul-con {
+  position: absolute;
+}
+
+body main .main-content-wrap .wrap2 .cul-con .item-image {
+  height: 300px;
+  width: 300px;
+}
+
+body main .main-content-wrap .wrap2 .cul-con .item-image img {
+  width: 100%;
+  height: auto;
+}
+
+body main .main-content-wrap .wrap2 .cul1 {
+  top: 0;
+  left: 0;
+}
+
+body main .main-content-wrap .wrap2 .cul2 {
+  top: 30%;
+  left: 35%;
+}
+
+body main .main-content-wrap .wrap2 .cul3 {
+  top: -20%;
+  right: 0;
+}
+
+body main .main-content-wrap > p {
+  font-size: 40px;
+  margin: 20px 0;
+  margin-top: 100px;
+  text-align: center;
+  font-weight: 400;
+  color: #555;
+}
+/*# sourceMappingURL=contact.css.map */

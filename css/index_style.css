@@ -1,0 +1,307 @@
+@import url(commom.css);
+header * {
+  color: white;
+}
+
+html,
+body {
+  background-color: #000;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+main .circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  z-index: 1;
+  border: 2px solid #eee;
+  border-radius: 80%;
+  -webkit-transition: 0.08s;
+  transition: 0.08s;
+  pointer-events: none;
+}
+
+main .page-content {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main .page-content .img-content-wrap {
+  width: 100%;
+  position: relative;
+  height: 500vh;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+main .page-content .img-content-wrap .frame {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+main .page-content .img-content-wrap .frame .img-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+main .page-content .img-content-wrap .frame .img-mask .img-section {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+main .page-content .img-content-wrap .frame .img-mask .opa {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+main .page-content .img-content-wrap .frame:nth-of-type(1) {
+  top: 0%;
+}
+
+main .page-content .img-content-wrap .frame:nth-of-type(2) {
+  top: 20%;
+}
+
+main .page-content .img-content-wrap .frame:nth-of-type(3) {
+  top: 40%;
+}
+
+main .page-content .img-content-wrap .frame:nth-of-type(4) {
+  top: 60%;
+}
+
+main .page-content .img-content-wrap .frame:nth-of-type(5) {
+  top: 80%;
+}
+
+main .page-content .img-content-wrap .about .img-mask .img-section {
+  background-image: url(../img/index/poster_main.jpg);
+}
+
+main .page-content .img-content-wrap .product .img-mask .img-section {
+  background-image: url(../img/index/product.jpg);
+}
+
+main .page-content .img-content-wrap .contect .img-mask .img-section {
+  background-image: url(../img/index/seoul_office.jpg);
+}
+
+main .page-content .img-content-wrap .works .img-mask {
+  position: relative;
+  overflow: hidden;
+}
+
+main .page-content .img-content-wrap .works .img-mask video {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1920px;
+}
+
+main .page-content .img-content-wrap .works .img-mask .img-section {
+  background-image: url(../img/index/himart_hero.jpg);
+}
+
+main .fix-content {
+  width: 100%;
+  height: 300px;
+  position: fixed;
+  left: 13%;
+  top: 40%;
+  overflow: hidden;
+}
+
+main .fix-content .txt-content-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+main .fix-content .txt-content-wrap .txtcon {
+  height: 250px;
+  margin: 40px 0;
+}
+
+main .fix-content .txt-content-wrap .txtcon a .classify {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+main .fix-content .txt-content-wrap .txtcon a .maintitle {
+  font-size: 85px;
+  line-height: 90px;
+  font-weight: bold;
+  color: #fff;
+}
+
+main .fix-content .txt-content-wrap .txtcon a .subtitle {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+main .indi {
+  position: fixed;
+  width: 150px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  left: 3%;
+  top: 58%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .indi #scrollName {
+  color: #777;
+  font-size: 12px;
+}
+
+main .indi #scrollBar {
+  width: 100px;
+  height: 1px;
+  background-color: #777;
+}
+
+main .index {
+  position: fixed;
+  bottom: 5%;
+  left: 13%;
+  height: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  width: 60px;
+}
+
+main .index .idx-wrap {
+  width: 50%;
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 15px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main .index .idx-wrap p {
+  color: #fff;
+}
+
+main .index .max-idx {
+  color: #aaa;
+  font-size: 15px;
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+
+aside {
+  width: 50px;
+  height: 160px;
+  position: fixed;
+  top: 42%;
+  right: 0;
+  background-color: #000;
+}
+
+aside a {
+  width: 100%;
+  height: 100%;
+}
+
+aside a .blog-button {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+aside a .blog-button p {
+  text-transform: capitalize;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 10px 5px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  font-size: 14px;
+}
+
+aside a .blog-button img {
+  width: 80%;
+  height: auto;
+  margin: 10px 10px;
+}
+/*# sourceMappingURL=index_style.css.map */

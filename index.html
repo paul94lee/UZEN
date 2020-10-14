@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/index_style.css" rel="stylesheet" type="text/css">
+    <title>UZEN</title>
+    <link rel="icon" href="img/UZEN.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery.plate.js"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="circle"></div>
+
+        <div class="page-content">
+            <div class="img-content-wrap ">
+                <div class="about frame">
+                    <div class="img-mask">
+                        <div class="img-section">
+                        </div>
+                        <div class="opa">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product frame">
+                    <div class="img-mask">
+                        <div class="img-section">
+                        </div>
+                        <div class="opa">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="works frame">
+                    <div class="img-mask">
+                        <video loop autoplay muted>
+                            <source src="video/lotte_on_com.mp4" type="video/mp4">
+                        </video>
+                        <div class="opa">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="works frame">
+                    <div class="img-mask">
+                        <div class="img-section">
+                        </div>
+                        <div class="opa">
+                        </div>
+                    </div>
+                </div>
+                <div class="contect frame">
+                    <div class="img-mask">
+                        <div class="img-section">
+                        </div>
+                        <div class="opa">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="fix-content">
+            <div class="txt-content-wrap">
+                <div class="txt-con01 txtcon">
+                    <a href="aboutus.html">
+                        <div class="classify">
+                            About
+                        </div>
+                        <div class="maintitle">living together UZEN
+                        </div>
+                        <div class="subtitle">
+                            큰 꿈을 품고 더불어 살아가는 좋은 커뮤니티사람과 미래를 위한 기술을 선도하는 글로벌 기업
+                        </div>
+
+                    </a>
+                </div>
+                <div class="txt-con02 txtcon">
+                    <a href="productDetail.html">
+                        <div class="classify">
+                            Product.
+                        </div>
+                        <div class="maintitle">Product.
+                        </div>
+                        <div class="subtitle">
+                            G1 Commerce Platform | WASCO | RepChart
+
+                        </div>
+
+                    </a>
+                </div>
+                <div class="txt-con03 txtcon">
+                    <a href="workDetail.html">
+                        <div class="classify">
+                            Works
+                        </div>
+                        <div class="maintitle">LOTTE ON
+                        </div>
+                        <div class="subtitle">
+                            LOTTE ON 구축 프로젝트 (2019~2020)
+                        </div>
+                    </a>
+                </div>
+                <div class="txt-con03 txtcon">
+                    <a href="workDetail.html">
+                        <div class="classify">
+                            Works
+                        </div>
+                        <div class="maintitle">LOTTE hi-mart
+                        </div>
+                        <div class="subtitle">
+                            LOTTE hi-mart App 구축 프로젝트 (2019~2020)
+                        </div>
+
+                    </a>
+                </div>
+                <div class="txt-con03 txtcon">
+                    <a href="contact.html">
+                        <div class="classify">
+                            Contect us
+                        </div>
+                        <div class="maintitle">Contect us
+                        </div>
+                        <div class="subtitle">
+                            Seoul Office. | Tokyo Office. | Shanghai Office.
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="index">
+            <div class="idx-wrap">
+                <p>01</p>
+                <p>02</p>
+                <p>03</p>
+                <p>04</p>
+                <p>05</p>
+            </div>
+            <span class="max-idx">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;05</span>
+        </div>
+        <div class="indi">
+            <span id="scrollName">Scroll</span>
+            <span id="scrollBar"></span>
+            <span id="scrollIdx"></span>
+        </div>
+
+
+    </main>
+    <aside>
+        <a href="https://blog.naver.com/uzenblog">
+            <div class="blog-button">
+                <img src="img/index/blogicon.png" alt="">
+                <p>Blog</p>
+            </div>
+        </a>
+    </aside>
+
+    <script>
+        $('#plate-default').plate();
+        $('#plate-inverse').plate({
+            inverse: true
+        });
+        $('.ss').plate({
+            perspective: 2000,
+            maxRotation: 5,
+            animationDuration: 50
+        });
+        $('html').plate({
+            element: '.page-content',
+            perspective: 4000,
+            maxRotation: 2,
+            animationDuration: 30
+        });
+        $('#listener-remote').plate({
+            element: $('#plate-remote')
+        });
+    </script>
+
+</body>
+
+</html>

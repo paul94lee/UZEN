@@ -1,0 +1,107 @@
+@import url(commom.css);
+body {
+    color: #000;
+    background-color: #fff;
+
+
+
+    main {
+        background: url(../img/culture/bg-light.png) center top no-repeat;
+
+        .main-content-wrap {
+            max-width: 90%;
+            .hero {
+                width: 100%;
+                padding-top: 200px;
+                margin: 0 auto;
+                margin-bottom: 100px;
+                h1 {
+                    font-size: 85px;
+                    line-height: 90px;
+                    white-space: pre-line;
+                }
+                p {
+                    margin-top: 50px;
+                    width: 50%;
+                    font-size: 15px;
+                    color: #333;
+                }
+
+            }
+            .cul-wrap {
+                width: 96%;
+                margin: 0 auto;
+                position: relative;
+                .cul-con {
+                    margin-bottom: 40px;
+                    .item-image {
+                        transition: 0.3s;
+                        clip-path: inset(8px 8px 8px 8px);
+                        position: relative;
+                        // padding-top:calc(100% / 16*6);
+                        overflow: hidden;
+                        img {
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                    .item-image:hover {
+                        clip-path: inset(0 0 0 0);
+                    }
+                    .item-caption {
+                        margin: 10px 0;
+                        h2 {
+                            color: #333;
+                            position: relative;
+                            font-size: 18px;
+                            display: block;
+                            transition: 0.3s;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            h2 {
+                color: #000;
+            }
+            .wrap2 {
+                margin-top: 200px;
+                height: 500px;
+                .cul-con {
+                    position: absolute;
+                    .item-image {
+                        height: 300px;
+                        width: 300px;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+                .cul1 {
+                    top: 0;
+                    left: 0;
+                }
+                .cul2 {
+                    top: 30%;
+                    left: 35%;
+                }
+                .cul3 {
+                    top: -20%;
+                    right: 0;
+                }
+            }
+            > p{
+                font-size: 40px;
+                margin:20px 0;
+                margin-top: 100px;
+                text-align: center;
+                font-weight: 400;
+                color: #555;
+            }
+        }
+        
+    }
+}

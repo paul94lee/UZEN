@@ -1,0 +1,103 @@
+@import url(commom.css);
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body header * {
+  color: black;
+}
+
+body header * #logo a {
+  display: inline-block;
+  width: 82px;
+  height: 24px;
+  background-image: url(../img/index/orange_logo.png);
+  background-repeat: no-repeat;
+}
+
+body header * ul li {
+  position: relative;
+}
+
+body header * ul li {
+  overflow: hidden;
+}
+
+body header * ul li div {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body header * ul li .about:before {
+  content: "about";
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+body header * ul li .product:before {
+  content: "product";
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+body header * ul li .works:before {
+  content: "works";
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+body header * ul li .contactus:before {
+  content: "contactus";
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+body header * ul li .culture:before {
+  content: "culture";
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+body header * ul li .career:before {
+  content: "career";
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+body header * ul li div:hover {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+body header * ul li.active a {
+  border-bottom: 1px solid #000;
+}
+
+body header * ul:last-of-type li:last-of-type div:hover {
+  -webkit-transform: none;
+          transform: none;
+}
+
+body header.aa * {
+  color: white;
+}
+
+body header.aa * #logo a {
+  display: inline-block;
+  width: 82px;
+  height: 24px;
+  background-image: url(../img/index/white_logo.png);
+  background-repeat: no-repeat;
+}
+
+body header.aa * ul li li.active a {
+  border-bottom: 1px solid #fff;
+}
+/*# sourceMappingURL=white_header.css.map */
