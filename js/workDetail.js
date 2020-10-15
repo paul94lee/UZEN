@@ -28,4 +28,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
     }
 
+    $('html').plate({
+        element: '.workimg figure img',
+        perspective: 4000,
+        maxRotation: 2,
+        animationDuration: 30
+    });
 });

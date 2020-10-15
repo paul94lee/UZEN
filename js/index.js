@@ -57,5 +57,10 @@ window.addEventListener('DOMContentLoaded', function () {
         setTimeout(function () { bln = false }, 705);
     };
 
-
+    $('html').plate({
+        element: '.page-content',
+        perspective: 4000,
+        maxRotation: 2,
+        animationDuration: 30
+    });
 });
