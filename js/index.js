@@ -6,24 +6,23 @@ window.addEventListener('DOMContentLoaded', function () {
     var imgMove = document.querySelector('.img-content-wrap');
     var txtMove = document.querySelector('.txt-content-wrap');
     var indx = document.querySelector('.idx-wrap');
-
-
-    window.addEventListener('mousewheel', swift);
-
     var x, y;
     var ball = document.querySelector('.circle');
+    var bln = false;
+    var indi = document.getElementById('scrollIdx');
+
+    window.addEventListener('mousewheel', swift);
     window.addEventListener('mousemove', mMove);
+
     function mMove(e) {
         x = e.pageX;
         y = e.pageY;
 
         ball.style.top = "calc(" + y + "px - 15px)";
         ball.style.left = "calc(" + x + "px - 15px)";
-
+        // console.log(cursor.style)
 
     }
-
-    bln = false;
     function swift(e) {
         if (bln) return;
         if (e.wheelDelta > 0) {
@@ -35,9 +34,11 @@ window.addEventListener('DOMContentLoaded', function () {
             }
             i++;
             var c = i * 20;
+            var t = i * 100;
             imgMove.style.transform = "translateY(" + c + "%)";
             txtMove.style.transform = "translateY(" + c + "%)";
             indx.style.transform = "translateY(" + c + "%)";
+            indi.style.transform = "translateX(" + t + "%)";
         }
         else if (e.wheelDelta < 0) {
             if (i <= -4) {
@@ -45,9 +46,11 @@ window.addEventListener('DOMContentLoaded', function () {
             }
             i--;
             var c = i * 20;
+            var t = i * 100;
             imgMove.style.transform = "translateY(" + c + "%)";
             txtMove.style.transform = "translateY(" + c + "%)";
             indx.style.transform = "translateY(" + c + "%)";
+            indi.style.transform = "translateX(" + t + "%)";
 
         }
         bln = true;

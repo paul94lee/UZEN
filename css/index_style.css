@@ -189,14 +189,25 @@ main .indi {
 }
 
 main .indi #scrollName {
-  color: #777;
+  color: #aaa;
   font-size: 12px;
 }
 
 main .indi #scrollBar {
+  position: relative;
   width: 100px;
-  height: 1px;
+  height: 2px;
   background-color: #777;
+}
+
+main .indi #scrollBar #scrollIdx {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
 }
 
 main .index {

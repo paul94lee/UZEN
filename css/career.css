@@ -65,14 +65,15 @@ body main .main-content-wrap .content .telent .talent-type div {
 }
 
 body main .main-content-wrap .content .telent .talent-type div img {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
 body main .main-content-wrap .content .telent .talent-type div h3 {
+  white-space: pre-line;
   margin-top: 20px;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 body main .main-content-wrap .content .benefits > ul {
@@ -100,8 +101,8 @@ body main .main-content-wrap .content .benefits > ul > li h3 {
 
 body main .main-content-wrap .content .benefits > ul > li ul {
   max-height: 0;
-  -webkit-transition: max-height .5s linear;
-  transition: max-height .5s linear;
+  -webkit-transition: max-height 0.5s linear;
+  transition: max-height 0.5s linear;
   overflow: hidden;
   width: 60%;
 }

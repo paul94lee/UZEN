@@ -99,13 +99,14 @@ body {
                             justify-content: center;
                             align-items: center;
                             img {
-                                width: 50%;
+                                width: 100%;
                                 height: auto;
                             }
                             h3 {
+                                white-space: pre-line;
                                 margin-top: 20px;
                                 text-align: center;
-                                font-size: 16px;
+                                font-size: 20px;
                             }
                         }
                     }
@@ -125,7 +126,7 @@ body {
                             }
                             ul {
                                 max-height: 0;
-                                transition: max-height .5s linear;
+                                transition: max-height 0.5s linear;
                                 overflow: hidden;
                                 width: 60%;
                                 li {

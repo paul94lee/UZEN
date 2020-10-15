@@ -9,8 +9,6 @@ body {
     overflow-x: hidden;
 }
 main {
-   
-
     .page-content {
         position: relative;
         height: 100vh;
@@ -172,13 +170,22 @@ main {
         justify-content: space-between;
         align-items: center;
         #scrollName {
-            color: #777;
+            color: #aaa;
             font-size: 12px;
         }
         #scrollBar {
+            position: relative;
             width: 100px;
-            height: 1px;
+            height: 2px;
             background-color: #777;
+            #scrollIdx {
+                position: absolute;
+                right:0;top: 0;
+                z-index: 1;
+                width: 20px;
+                height: 2px;
+                background-color: #fff;
+            }
         }
     }
     .index {
