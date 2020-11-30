@@ -129,7 +129,7 @@ body {
 
     .hidden-menu {
         display: none;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(255,255,255, 0.8);
     }
 }
 
@@ -159,6 +159,7 @@ body {
         -webkit-transition: 0.3s;
         transition: 0.3s;
         z-index: -1;
+        font-size: 8rem;
     }
 
     .hidden-menu.active {
