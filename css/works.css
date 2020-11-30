@@ -150,7 +150,7 @@ body main .main-content-wrap .work-wrap .works-thum .two-row .item-caption {
 body main .main-content-wrap .work-wrap .works-thum .two-row .item-caption h2 {
   color: #aaa;
   position: relative;
-  font-size: 20px;
+  font-size: 2rem;
   display: inline-block;
 }
 
@@ -166,7 +166,7 @@ body main .main-content-wrap .work-wrap .works-thum .two-row .item-caption h2::a
 body main .main-content-wrap .work-wrap .works-thum .two-row .item-caption h4 {
   color: #999;
   display: inline-block;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 
@@ -208,7 +208,7 @@ body main .main-content-wrap .work-wrap .works-thum .three-row .item-image video
 body main .main-content-wrap .work-wrap .works-thum .three-row .item-caption h2 {
   color: #aaa;
   position: relative;
-  font-size: 20px;
+  font-size: 2rem;
   display: inline-block;
 }
 
@@ -224,7 +224,7 @@ body main .main-content-wrap .work-wrap .works-thum .three-row .item-caption h2:
 body main .main-content-wrap .work-wrap .works-thum .three-row .item-caption h4 {
   color: #999;
   display: inline-block;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 
@@ -256,7 +256,7 @@ body main .main-content-wrap .work-wrap .works-list ul li span {
   display: inline-block;
   padding: 20px 0;
   width: 20%;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
   color: #eee;
   z-index: 2;
@@ -265,7 +265,7 @@ body main .main-content-wrap .work-wrap .works-list ul li span {
 }
 
 body main .main-content-wrap .work-wrap .works-list ul li span a {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #eee;
 }
 
@@ -273,7 +273,7 @@ body main .main-content-wrap .work-wrap .works-list ul li p {
   position: relative;
   padding: 20px 0;
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.8rem;
   width: 70%;
   font-weight: 400;
   color: #eee;
@@ -307,5 +307,17 @@ body main .main-content-wrap .work-wrap .works-thum.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  body main .main-content-wrap .work-wrap .works-thum .two-row .item-image {
+    height: 100px;
+  }
+  body main .main-content-wrap .work-wrap .works-thum .three-row .item-image {
+    height: 100px;
+  }
+  body main .main-content-wrap .work-wrap .represent div {
+    display: none;
+  }
 }
 /*# sourceMappingURL=works.css.map */

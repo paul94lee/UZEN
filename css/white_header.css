@@ -91,7 +91,7 @@ body header .header-container .bugerBtn {
   top: 40px;
   right: 10%;
   width: 30px;
-  height: 20px;
+  height: 22px;
 }
 
 body header .header-container .bugerBtn .buger-wrap {
@@ -103,7 +103,7 @@ body header .header-container .bugerBtn .buger-wrap {
 body header .header-container .bugerBtn .buger-wrap span {
   display: inline-block;
   width: 100%;
-  height: 3px;
+  height: 2px;
   background-color: #000;
   position: absolute;
 }
@@ -122,8 +122,24 @@ body header .header-container .bugerBtn .buger-wrap span:nth-of-type(3) {
   bottom: 0;
 }
 
+body header .header-container .bugerBtn.active .buger-wrap span:nth-of-type(1) {
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+}
+
+body header .header-container .bugerBtn.active .buger-wrap span:nth-of-type(2) {
+  display: none;
+}
+
+body header .header-container .bugerBtn.active .buger-wrap span:nth-of-type(3) {
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+}
+
 body header.aa * {
-  color: white;
+  color: white !important;
 }
 
 body header.aa * #logo a {
@@ -144,6 +160,7 @@ body header.aa * .bugerBtn span {
 
 body .hidden-menu {
   display: none;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -153,14 +170,20 @@ body .hidden-menu {
   .header-container .bugerBtn {
     display: block !important;
   }
-  .hidden-menu {
+  .hidden-menu.active {
     display: block !important;
+    visibility: visible;
+    opacity: 1;
+  }
+  .hidden-menu {
+    visibility: hidden;
     position: absolute;
-    top: 100%;
+    top: 120%;
     left: 0;
     opacity: 0;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
+    color: #000;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     z-index: -1;

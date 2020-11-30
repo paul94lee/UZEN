@@ -4,6 +4,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+    font-size: 10px;
+}
 body {
     width: 100%;
     position: relative;
@@ -26,19 +29,19 @@ figure {
     padding: 0;
 }
 p {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 28px;
     color: #888;
     font-weight: 400;
 }
 h2 {
     color: #c6c7cc;
-    font-size: 36px;
+    font-size: 3.6rem;
     margin-bottom: 20px;
 }
 h3 {
     color: #c6c7cc;
-    font-size: 18px;
+    font-size: 1.8rem;
     white-space: pre-line;
 }
 .main {
@@ -107,7 +110,7 @@ header {
     float: left;
     display: block;
     text-transform: uppercase;
-    font-size: 13.5px;
+    font-size: 1.35rem;
     font-weight: 900;
     font-family: "Noto Sans", sans-serif;
 }
@@ -155,7 +158,7 @@ header {
     padding-top: 200px;
 }
 h1 {
-    font-size: 85px;
+    font-size: 8.5rem;
     line-height: 90px;
     white-space: pre-line;
 }
@@ -193,4 +196,10 @@ footer .copy {
     border-radius: 80%;
     transition: 0.08s;
     pointer-events: none;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    html{
+        font-size: 4px;
+    }
 }

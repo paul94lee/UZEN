@@ -147,7 +147,7 @@ main .fix-content .txt-content-wrap .txtcon {
 }
 
 main .fix-content .txt-content-wrap .txtcon a .classify {
-  font-size: 24px;
+  font-size: 2rem;
   line-height: 20px;
   font-weight: 600;
   color: #999;
@@ -156,7 +156,7 @@ main .fix-content .txt-content-wrap .txtcon a .classify {
 }
 
 main .fix-content .txt-content-wrap .txtcon a .maintitle {
-  font-size: 85px;
+  font-size: 6rem;
   line-height: 90px;
   font-weight: bold;
   color: #fff;
@@ -164,7 +164,7 @@ main .fix-content .txt-content-wrap .txtcon a .maintitle {
 
 main .fix-content .txt-content-wrap .txtcon a .subtitle {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #ccc;
 }
 
