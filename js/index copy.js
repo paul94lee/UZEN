@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', function () {
-    $('header').load('../white_header.html');
+    $('header').load('./white-header.html header', nav);
     var swtCOl = document.querySelector('header');
     swtCOl.classList.add('aa');
     var imgCon = document.querySelectorAll('.page-content .img-content-wrap .frame');

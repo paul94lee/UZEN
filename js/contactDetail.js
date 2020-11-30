@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', function () {
-    $('header').load('./white-header.html', nav);
+    $('header').load('./white-header.html header', nav);
     $('footer').load('./footer.html');
     function nav() {
         var navList = document.querySelectorAll('.nav-list li');

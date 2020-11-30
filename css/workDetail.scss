@@ -140,8 +140,8 @@ body {
                     -ms-filter: -ms-drop-shadow(0px 0px 2px #fff);
                     transition: all 0.2s ease-in-out;
                 }
-                a:hover{
-                    color:#c6c7cc;
+                a:hover {
+                    color: #c6c7cc;
                     -webkit-text-stroke: 1px #c6c7cc;
                 }
             }
@@ -150,4 +150,13 @@ body {
     footer {
         background-color: #111;
     }
+}
+
+@media (min-width: 768px) and (max-width: 1152px) {
+    body main .workimg .title-wrap {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
 }
