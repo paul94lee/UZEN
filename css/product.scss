@@ -67,3 +67,22 @@ body {
         }
     }
 }
+@media (min-width: 0px) and (max-width: 768px) {
+    .product-wrap {
+        a{
+            >div{
+                figure{
+                    width: 100% !important;
+                    div{
+                        p{
+                            padding: 21% 0 !important;
+                        }
+                    }
+                }
+                >div{
+                    display: none;
+                }
+            }
+        }
+    }
+}

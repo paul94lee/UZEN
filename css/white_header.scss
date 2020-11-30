@@ -101,6 +101,7 @@ body {
 
     header.aa * {
         color: white !important;
+ 
         #logo {
             a {
                 display: inline-block;
@@ -125,8 +126,7 @@ body {
             }
         }
     }
-    header .hidden-menu {
-    }
+
     .hidden-menu {
         display: none;
         background-color: rgba(0, 0, 0, 0.5);

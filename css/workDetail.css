@@ -34,7 +34,7 @@ body main .workimg figure img {
 
 body main .workimg .title-wrap {
   color: #fff;
-  font-size: 80px;
+  font-size: 8rem;
   position: absolute;
   top: 42%;
   right: 19%;
@@ -56,7 +56,7 @@ body main .con-info .work-sum {
 body main .con-info .work-sum > p {
   width: 40%;
   white-space: pre-line;
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 body main .con-info .work-sum div {
@@ -64,16 +64,16 @@ body main .con-info .work-sum div {
 }
 
 body main .con-info .work-sum div h2 {
-  font-size: 48px;
+  font-size: 4.8rem;
 }
 
 body main .con-info .work-sum div p {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 body main .con-info .work-sum div ul li {
   color: #888;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 body main .screenshot {
@@ -106,7 +106,7 @@ body main .screenshot .s-shot-wrap .img-wrap {
 body main .screenshot .s-shot-wrap .img-wrap figure {
   width: 28%;
   border: 7px solid #000;
-  border-radius: 30px;
+  border-radius: 3rem;
   overflow: hidden;
   margin-bottom: 100px;
 }
@@ -152,12 +152,12 @@ body main .next-work .next-wrap {
 }
 
 body main .next-work .next-wrap p {
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 30px;
 }
 
 body main .next-work .next-wrap a {
-  font-size: 80px;
+  font-size: 8rem;
   font-weight: 900;
   color: #111;
   -webkit-text-stroke: 1px #fff;
@@ -177,7 +177,7 @@ body footer {
 
 @media (min-width: 768px) and (max-width: 1152px) {
   body main .workimg .title-wrap {
-    font-size: 50px;
+    font-size: 5rem;
   }
 }
 /*# sourceMappingURL=workDetail.css.map */

@@ -62,4 +62,16 @@ body main .main-content-wrap .product-wrap a > div div {
 body main .main-content-wrap .product-wrap a > div div h3 {
   font-size: 40px;
 }
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .product-wrap a > div figure {
+    width: 100% !important;
+  }
+  .product-wrap a > div figure div p {
+    padding: 21% 0 !important;
+  }
+  .product-wrap a > div > div {
+    display: none;
+  }
+}
 /*# sourceMappingURL=product.css.map */

@@ -300,4 +300,18 @@ aside a .blog-button img {
   height: auto;
   margin: 10px 10px;
 }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  aside {
+    width: 8rem;
+    height: 20rem;
+    position: fixed;
+    top: 42%;
+    right: 0;
+    background-color: #000;
+  }
+  aside a div p {
+    font-size: 1.5rem !important;
+  }
+}
 /*# sourceMappingURL=index_style.css.map */

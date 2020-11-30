@@ -34,7 +34,7 @@ body main .productimg figure img {
 
 body main .productimg .title-wrap {
   color: #fff;
-  font-size: 70px;
+  font-size: 7rem;
   position: absolute;
   top: 42%;
   right: 19%;
@@ -50,7 +50,7 @@ body main .con-info .product-sum {
 body main .con-info .product-sum > p {
   width: 40%;
   white-space: pre-line;
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 body main .con-info .product-sum div {
@@ -58,16 +58,16 @@ body main .con-info .product-sum div {
 }
 
 body main .con-info .product-sum div h2 {
-  font-size: 48px;
+  font-size: 4.8rem;
 }
 
 body main .con-info .product-sum div p {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 body main .con-info .product-sum div ul li {
   color: #888;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 body main .line {
@@ -141,7 +141,7 @@ body main .advantages .advan-wrap ol li {
 }
 
 body main .advantages .advan-wrap ol li h3 {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 body main .next-product {
@@ -156,12 +156,12 @@ body main .next-product .next-wrap {
 }
 
 body main .next-product .next-wrap p {
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 30px;
 }
 
 body main .next-product .next-wrap a {
-  font-size: 80px;
+  font-size: 8rem;
   font-weight: 900;
   color: #111;
   -webkit-text-stroke: 1px #fff;
@@ -181,7 +181,22 @@ body footer {
 
 @media (min-width: 768px) and (max-width: 1152px) {
   body main .productimg .title-wrap {
-    font-size: 50px;
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  body main .productimg .title-wrap {
+    bottom: 0%;
+    right: 30%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  body main .line .line-up figure {
+    width: 100%;
+  }
+  body main .features > div figure {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=productDetail.css.map */
