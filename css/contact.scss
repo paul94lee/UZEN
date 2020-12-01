@@ -16,7 +16,7 @@ body {
                 margin: 0 auto;
                 margin-bottom: 100px;
                 h1 {
-                    font-size: 85px;
+                    font-size: 8.5rem;
                     line-height: 90px;
                     white-space: pre-line;
                 }
@@ -55,7 +55,7 @@ body {
                         h2 {
                             color: #333;
                             position: relative;
-                            font-size: 18px;
+                            font-size: 1.8rem;
                             display: block;
                             transition: 0.3s;
                             margin: 0;
@@ -72,8 +72,8 @@ body {
                 .cul-con {
                     position: absolute;
                     .item-image {
-                        height: 300px;
-                        width: 300px;
+                        height: 30rem;
+                        width: 30rem;
                         img {
                             width: 100%;
                             height: auto;
@@ -94,7 +94,7 @@ body {
                 }
             }
             > p{
-                font-size: 40px;
+                font-size: 4rem;
                 margin:20px 0;
                 margin-top: 100px;
                 text-align: center;

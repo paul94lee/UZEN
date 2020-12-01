@@ -4,6 +4,10 @@ body {
   background-color: #fff;
 }
 
+body h3 {
+  font-size: 20px !important;
+}
+
 body header * {
   color: #000 !important;
 }
@@ -303,5 +307,15 @@ body main .main-content-wrap .content .hire-process .recruit button {
   color: #fff;
   font-size: 15px;
   font-weight: 800;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .talent-type {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .talent-type > div {
+    width: 70vw !important;
+  }
 }
 /*# sourceMappingURL=career.css.map */

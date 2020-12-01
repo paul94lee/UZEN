@@ -39,6 +39,9 @@ $black: #000;
     }
 }
 body {
+    h3 {
+        font-size: 20px !important;
+    }
     color: #000;
     background-color: #fff;
 
@@ -195,6 +198,14 @@ body {
                     }
                 }
             }
+        }
+    }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+    .talent-type {
+        flex-wrap: wrap;
+        > div {
+            width: 70vw !important;
         }
     }
 }
