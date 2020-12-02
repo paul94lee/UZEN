@@ -219,7 +219,7 @@ main .index {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-  width: 60px;
+  width: 6rem;
 }
 
 main .index .idx-wrap {
@@ -238,7 +238,7 @@ main .index .idx-wrap {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 15px;
+  font-size: 1.5rem;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -250,7 +250,7 @@ main .index .idx-wrap p {
 
 main .index .max-idx {
   color: #aaa;
-  font-size: 15px;
+  font-size: 1.5rem;
   position: absolute;
   top: 10%;
   right: 0;

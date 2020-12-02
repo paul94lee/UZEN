@@ -196,14 +196,14 @@ main {
         height: 30px;
         justify-content: center;
         overflow: hidden;
-        width: 60px;
+        width: 6rem;
         .idx-wrap {
             width: 50%;
             transition: transform 0.7s;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            font-size: 15px;
+            font-size: 1.5rem;
             align-items: flex-start;
 
             p {
@@ -212,7 +212,7 @@ main {
         }
         .max-idx {
             color: #aaa;
-            font-size: 15px;
+            font-size: 1.5rem;
             position: absolute;
             top: 10%;
             right: 0;
@@ -254,6 +254,7 @@ aside {
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
+    
     aside {
         width: 8rem;
         height: 20rem;

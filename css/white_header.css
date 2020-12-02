@@ -191,6 +191,8 @@ body .hidden-menu {
     transition: 0.3s;
     z-index: -1;
     font-size: 8rem;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
   }
   .hidden-menu.active {
     opacity: 1;

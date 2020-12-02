@@ -203,6 +203,9 @@ footer .copy {
     html {
         font-size: 5px;
     }
+    .circle{
+        display: none;
+    }
     body main .main-content-wrap {
         width: 100%;
     }
