@@ -24,8 +24,8 @@ body main .workimg {
 }
 
 body main .workimg figure img {
-  width: 110%;
   height: 110%;
+  width: auto;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -141,12 +141,12 @@ body main .icon .icon-wrap figure img {
 }
 
 body main .next-work {
-  height: 330px;
+  height: 33rem;
   background-color: #111;
 }
 
 body main .next-work .next-wrap {
-  padding: 140px 0;
+  padding: 14rem 0;
   width: 60%;
   margin: 0 auto;
 }
@@ -178,6 +178,51 @@ body footer {
 @media (min-width: 768px) and (max-width: 1152px) {
   body main .workimg .title-wrap {
     font-size: 5rem;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  html {
+    font-size: 8px !important;
+  }
+  .workimg {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .workimg figure img {
+    height: 110%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .workimg .title-wrap {
+    color: #fff;
+    font-size: 4rem !important;
+    position: absolute;
+    top: 20% !important;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 80%;
+    font-weight: 700;
+  }
+  .workimg .title-wrap .subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: end;
+  }
+  .con-info .work-sum div {
+    display: none;
+  }
+  .screenshot .s-shot-wrap .img-wrap figure {
+    width: 100% !important;
+  }
+  .next-work .next-wrap {
+    padding: 5rem 0 !important;
   }
 }
 /*# sourceMappingURL=workDetail.css.map */
