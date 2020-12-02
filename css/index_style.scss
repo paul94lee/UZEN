@@ -1,273 +1,278 @@
 @import url(commom.css);
 header * {
-    color: white;
+  color: white;
 }
 html,
 body {
-    background-color: #000;
-    overflow-y: hidden;
-    overflow-x: hidden;
+  background-color: #000;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 main {
-    .page-content {
-        position: relative;
-        height: 100vh;
+  .page-content {
+    position: relative;
+    height: 100vh;
 
-        overflow: hidden;
+    overflow: hidden;
 
-        .img-content-wrap {
-            width: 100%;
-            position: relative;
-            height: 500vh;
-            transition: 0.7s;
-            transform-origin: left;
-            transform-style: preserve-3d;
+    .img-content-wrap {
+      width: 100%;
+      position: relative;
+      height: 500vh;
+      transition: 0.7s;
+      transform-origin: left;
+      transform-style: preserve-3d;
 
-            .frame {
-                position: absolute;
-                width: 100%;
-                height: 100vh;
-                top: 0;
-                left: 0;
-
-                .img-mask {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100vh;
-                    z-index: -1;
-                    // overflow: hidden;
-
-                    .img-section {
-                        width: 100%;
-                        height: 100%;
-                        background-size: cover;
-                        background-color: #000;
-                        background-repeat: no-repeat;
-                        background-position: top center;
-                    }
-                    .opa {
-                        width: 100%;
-                        height: 100%;
-                        position: absolute;
-                        background-color: #000;
-                        top: 0;
-                        left: 0;
-                        opacity: 0.5;
-                    }
-                }
-            }
-            .frame:nth-of-type(1) {
-                top: 0%;
-            }
-            .frame:nth-of-type(2) {
-                top: 20%;
-            }
-            .frame:nth-of-type(3) {
-                top: 40%;
-            }
-            .frame:nth-of-type(4) {
-                top: 60%;
-            }
-            .frame:nth-of-type(5) {
-                top: 80%;
-            }
-
-            .about {
-                .img-mask {
-                    .img-section {
-                        background-image: url(../img/index/poster_main.jpg);
-                    }
-                }
-            }
-            .product {
-                .img-mask {
-                    .img-section {
-                        background-image: url(../img/index/product.jpg);
-                    }
-                }
-            }
-            .contect {
-                .img-mask {
-                    .img-section {
-                        background-image: url(../img/index/seoul_office.jpg);
-                    }
-                }
-            }
-            .works {
-                .img-mask {
-                    position: relative;
-                    overflow: hidden;
-                    video {
-                        position: absolute;
-                        left: 50%;
-
-                        transform: translateX(-50%);
-                        width: 1920px;
-                        // height: 100vh;
-                    }
-                    .img-section {
-                        background-image: url(../img/index/himart_hero.jpg);
-                    }
-                }
-            }
-        }
-    }
-    .fix-content {
+      .frame {
+        position: absolute;
         width: 100%;
-        height: 300px;
-        position: fixed;
-        left: 13%;
-        top: 40%;
-        overflow: hidden;
+        height: 100vh;
+        top: 0;
+        left: 0;
 
-        .txt-content-wrap {
+        .img-mask {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          z-index: -1;
+          // overflow: hidden;
+
+          .img-section {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-color: #000;
+            background-repeat: no-repeat;
+            background-position: top center;
+          }
+          .opa {
+            width: 100%;
+            height: 100%;
             position: absolute;
+            background-color: #000;
             top: 0;
             left: 0;
-            width: 85%;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            transition: 0.7s;
+            opacity: 0.5;
+          }
+        }
+      }
+      .frame:nth-of-type(1) {
+        top: 0%;
+      }
+      .frame:nth-of-type(2) {
+        top: 20%;
+      }
+      .frame:nth-of-type(3) {
+        top: 40%;
+      }
+      .frame:nth-of-type(4) {
+        top: 60%;
+      }
+      .frame:nth-of-type(5) {
+        top: 80%;
+      }
 
-            .txtcon {
-                height: 250px;
-                margin: 40px 0;
-                a {
-                    .classify {
-                        font-size: 2rem;
-                        line-height: 20px;
-                        font-weight: 600;
-                        color: #999;
-                        text-transform: uppercase;
-                        margin-bottom: 10px;
-                    }
-                    .maintitle {
-                        font-size: 6rem;
-                        line-height: 90px;
-                        font-weight: bold;
-                        color: #fff;
-                    }
-                    .subtitle {
-                        margin-top: 20px;
-                        font-size: 1.8rem;
-                        color: #ccc;
-                    }
-                }
-            }
+      .about {
+        .img-mask {
+          .img-section {
+            background-image: url(../img/index/poster_main.jpg);
+          }
         }
-    }
-    .indi {
-        position: fixed;
-        width: 150px;
-        transform: rotate(270deg);
-        transform-origin: left;
-        left: 3%;
-        top: 58%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        #scrollName {
-            color: #aaa;
-            font-size: 12px;
+      }
+      .product {
+        .img-mask {
+          .img-section {
+            background-image: url(../img/index/product.jpg);
+          }
         }
-        #scrollBar {
-            position: relative;
-            width: 100px;
-            height: 2px;
-            background-color: #777;
-            #scrollIdx {
-                position: absolute;
-                right: 0;
-                top: 0;
-                z-index: 1;
-                width: 20px;
-                height: 2px;
-                background-color: #fff;
-            }
+      }
+      .contect {
+        .img-mask {
+          .img-section {
+            background-image: url(../img/index/seoul_office.jpg);
+          }
         }
-    }
-    .index {
-        position: fixed;
-        bottom: 5%;
-        left: 13%;
-        height: 30px;
-        justify-content: center;
-        overflow: hidden;
-        width: 6rem;
-        .idx-wrap {
-            width: 50%;
-            transition: transform 0.7s;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            font-size: 1.5rem;
-            align-items: flex-start;
-
-            p {
-                color: #fff;
-            }
-        }
-        .max-idx {
-            color: #aaa;
-            font-size: 1.5rem;
+      }
+      .works {
+        .img-mask {
+          position: relative;
+          overflow: hidden;
+          video {
             position: absolute;
-            top: 10%;
-            right: 0;
+            left: 50%;
+
+            transform: translateX(-50%);
+            width: 1920px;
+            // height: 100vh;
+          }
+          .img-section {
+            background-image: url(../img/index/himart_hero.jpg);
+          }
         }
+      }
     }
+  }
+  .fix-content {
+    width: 100%;
+    height: 300px;
+    position: fixed;
+    left: 13%;
+    top: 40%;
+    overflow: hidden;
+
+    .txt-content-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 85%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      transition: 0.7s;
+
+      .txtcon {
+        height: 250px;
+        margin: 40px 0;
+        a {
+          .classify {
+            font-size: 2rem;
+            line-height: 20px;
+            font-weight: 600;
+            color: #999;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+          }
+          .maintitle {
+            font-size: 6rem;
+            line-height: 90px;
+            font-weight: bold;
+            color: #fff;
+          }
+          .subtitle {
+            margin-top: 20px;
+            font-size: 1.8rem;
+            color: #ccc;
+          }
+        }
+      }
+    }
+  }
+  .indi {
+    position: fixed;
+    width: 150px;
+    transform: rotate(270deg);
+    transform-origin: left;
+    left: 3%;
+    top: 58%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #scrollName {
+      color: #aaa;
+      font-size: 12px;
+    }
+    #scrollBar {
+      position: relative;
+      width: 100px;
+      height: 2px;
+      background-color: #777;
+      #scrollIdx {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+      }
+    }
+  }
+  .index {
+    position: fixed;
+    bottom: 5%;
+    left: 13%;
+    height: 30px;
+    justify-content: center;
+    overflow: hidden;
+    width: 6rem;
+    .idx-wrap {
+      width: 50%;
+      transition: transform 0.7s;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      font-size: 1.5rem;
+      align-items: flex-start;
+
+      p {
+        color: #fff;
+      }
+    }
+    .max-idx {
+      color: #aaa;
+      font-size: 1.5rem;
+      position: absolute;
+      top: 10%;
+      right: 0;
+    }
+  }
 }
 aside {
-    width: 50px;
-    height: 160px;
-    position: fixed;
-    top: 42%;
-    right: 0;
+  width: 50px;
+  height: 160px;
+  position: fixed;
+  top: 42%;
+  right: 0;
 
-    background-color: #000;
-    a {
+  background-color: #000;
+  a {
+    width: 100%;
+    height: 100%;
+    .blog-button {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      p {
+        text-transform: capitalize;
         width: 100%;
-        height: 100%;
-        .blog-button {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            p {
-                text-transform: capitalize;
-                width: 100%;
-                color: #fff;
-                margin-bottom: 10px;
-                padding: 10px 5px;
-                transform: rotate(270deg);
-                font-size: 14px;
-            }
-            img {
-                width: 80%;
-                height: auto;
-                margin: 10px 10px;
-            }
-        }
+        color: #fff;
+        margin-bottom: 10px;
+        padding: 10px 5px;
+        transform: rotate(270deg);
+        font-size: 14px;
+      }
+      img {
+        width: 80%;
+        height: auto;
+        margin: 10px 10px;
+      }
     }
+  }
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
-    
-    aside {
-        width: 8rem;
-        height: 20rem;
-        position: fixed;
-        top: 42%;
-        right: 0;
-        background-color: #000;
-        a {
-            div {
-                p {
-                    font-size: 1.5rem !important;
-                }
-            }
+    html{
+        font-size: 6px;
+        .fix-content{
+            left: 5%;
         }
     }
+    .maintitle{
+        line-height: 9rem !important;
+    }
+  #scrollBar {
+    display: none;
+  }
+  #scrollName{
+      display: none;
+  }
+  aside {
+    display: none;
+  }
+  .index {
+    display: none;
+  }
 }

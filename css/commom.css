@@ -29,7 +29,7 @@ figure {
     padding: 0;
 }
 p {
-    font-size: 1.6rem;
+    font-size: 16px;
     line-height: 28px;
     color: #888;
     font-weight: 400;
@@ -38,10 +38,11 @@ h2 {
     color: #c6c7cc;
     font-size: 3.6rem;
     margin-bottom: 20px;
+    line-height: 3.6rem;
 }
 h3 {
     color: #c6c7cc;
-    font-size: 1.8rem;
+    font-size: 18px;
     white-space: pre-line;
 }
 .main {

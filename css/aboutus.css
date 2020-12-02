@@ -26,8 +26,8 @@ body .main .main-content-wrap .hero h1 {
   background: -webkit-linear-gradient(45deg, #a794e4, #b95851, #58395b 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 85px;
-  line-height: 90px;
+  font-size: 8.5rem;
+  line-height: 9rem;
   white-space: pre-line;
   background-image: url(https://media3.giphy.com/media/3otO6NFBIAFg2vPZuM/giphy.gif?cid=ecf05e47wwtjnv3f5twb99v0m6ar6fa0uynxje1jxg1j1qst&rid=giphy.gif);
   background-size: 120%;
@@ -137,14 +137,14 @@ body .main .main-content-wrap .content .history ul li span {
   display: inline-block;
   padding: 20px 0;
   width: 15%;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
   color: #eee;
   z-index: 2;
 }
 
 body .main .main-content-wrap .content .history ul li span:nth-of-type(2) a {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #eee;
 }
 
@@ -152,7 +152,7 @@ body .main .main-content-wrap .content .history ul li p {
   position: relative;
   padding: 20px 0;
   display: inline-block;
-  font-size: 15px;
+  font-size: 1.5rem;
   width: 70%;
   font-weight: 400;
   color: #eee;
@@ -179,5 +179,38 @@ body .main .main-content-wrap .content .history ul li:hover div {
   z-index: 1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media all and (max-width: 0), (max-width: 768px) {
+  html {
+    font-size: 9px !important;
+  }
+  html .main-content-wrap .hero h1 {
+    font-size: 5rem !important;
+    line-height: 5rem !important;
+  }
+  html body .main .main-content-wrap .content .intro {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  html body .main .main-content-wrap .content .intro div {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  html body .main .main-content-wrap .content .vision .vision-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  html body .main .main-content-wrap .content .vision .vision-flex div {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  html .service ul li strong {
+    width: 35% !important;
+    font-size: 18px !important;
+  }
+  html .content .client ul li {
+    width: 50% !important;
+  }
 }
 /*# sourceMappingURL=aboutus.css.map */

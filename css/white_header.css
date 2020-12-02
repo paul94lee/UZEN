@@ -190,7 +190,7 @@ body .hidden-menu {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     z-index: -1;
-    font-size: 8rem;
+    font-size: 35px !important;
     font-family: "Noto Sans", sans-serif;
     font-weight: bold;
   }

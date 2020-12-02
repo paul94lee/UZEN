@@ -302,16 +302,26 @@ aside a .blog-button img {
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
-  aside {
-    width: 8rem;
-    height: 20rem;
-    position: fixed;
-    top: 42%;
-    right: 0;
-    background-color: #000;
+  html {
+    font-size: 6px;
   }
-  aside a div p {
-    font-size: 1.5rem !important;
+  html .fix-content {
+    left: 5%;
+  }
+  .maintitle {
+    line-height: 9rem !important;
+  }
+  #scrollBar {
+    display: none;
+  }
+  #scrollName {
+    display: none;
+  }
+  aside {
+    display: none;
+  }
+  .index {
+    display: none;
   }
 }
 /*# sourceMappingURL=index_style.css.map */
