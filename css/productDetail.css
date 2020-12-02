@@ -186,6 +186,12 @@ body footer {
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
+  html {
+    font-size: 8px !important;
+  }
+  body main .productimg .title-wrap {
+    font-size: 4rem !important;
+  }
   body main .productimg .title-wrap {
     bottom: 0%;
     right: 30%;
@@ -197,6 +203,21 @@ body footer {
   }
   body main .features > div figure {
     width: 100%;
+  }
+  .con-info .product-sum div {
+    display: none;
+  }
+  .line-up {
+    width: 100% !important;
+  }
+  .features > div {
+    width: 100% !important;
+  }
+  .advantages .advan-wrap ol li {
+    font-size: 0;
+  }
+  .advantages .advan-wrap ol li h3 {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=productDetail.css.map */

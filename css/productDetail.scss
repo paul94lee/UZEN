@@ -1,180 +1,204 @@
 @import url(commom.css);
 @mixin wid60 {
-    width: 60%;
-    margin: 0 auto;
+  width: 60%;
+  margin: 0 auto;
 }
 body {
-    color: #ddd;
+  color: #ddd;
 
-    // background: #14181d;
-    background: #000;
-    header * {
-        color: white !important;
-        ul {
-            li.active {
-                a {
-                    border-bottom: 1px solid #fff;
-                }
-            }
+  // background: #14181d;
+  background: #000;
+  header * {
+    color: white !important;
+    ul {
+      li.active {
+        a {
+          border-bottom: 1px solid #fff;
         }
+      }
     }
-    main {
-        width: 100%;
-        .productimg {
-            height: 100vh;
-            position: relative;
+  }
+  main {
+    width: 100%;
+    .productimg {
+      height: 100vh;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      figure {
+        img {
+          width: 110%;
+          height: 110%;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      .title-wrap {
+        color: #fff;
+        font-size: 7rem;
+        position: absolute;
+        top: 42%;
+        right: 19%;
+        font-weight: 700;
+      }
+    }
+    .con-info {
+      .product-sum {
+        @include wid60();
+        padding: 70px 0;
+        > p {
+          width: 40%;
+          white-space: pre-line;
+          font-size: 2.5rem;
+        }
+        div {
+          width: 60%;
+          h2 {
+            font-size: 4.8rem;
+          }
+          p {
+            font-size: 1.6rem;
+          }
+          ul {
+            li {
+              color: #888;
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+    .line {
+      background: #343a40;
+      .line-up {
+        padding-top: 140px;
+        @include wid60();
+        h2 {
+          color: #fff;
+          padding-bottom: 50px;
+        }
+        figure {
+          width: 60%;
+          padding-bottom: 100px;
+
+          img {
             width: 100%;
-            overflow: hidden;
-            figure {
-                img {
-                    width: 110%;
-                    height: 110%;
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-            }
-            .title-wrap {
-                color: #fff;
-                font-size: 7rem;
-                position: absolute;
-                top: 42%;
-                right: 19%;
-                font-weight: 700;
-            }
+            height: 100%;
+          }
         }
-        .con-info {
-            .product-sum {
-                @include wid60();
-                padding: 70px 0;
-                > p {
-                    width: 40%;
-                    white-space: pre-line;
-                    font-size: 2.5rem;
-                }
-                div {
-                    width: 60%;
-                    h2 {
-                        font-size: 4.8rem;
-                    }
-                    p {
-                        font-size: 1.6rem;
-                    }
-                    ul {
-                        li {
-                            color: #888;
-                            font-size: 1.6rem;
-                        }
-                    }
-                }
-            }
-        }
-        .line {
-            background: #343a40;
-            .line-up {
-                padding-top: 140px;
-                @include wid60();
-                h2 {
-                    color: #fff;
-                    padding-bottom: 50px;
-                }
-                figure {
-                    width: 60%;
-                    padding-bottom: 100px;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-            }
-        }
-        .features {
-            background: #2b3138;
-            > div {
-                padding-top: 140px;
-                padding-bottom: 50px;
-                @include wid60();
-                h2 {
-                    color: #fff;
-                    padding-bottom: 50px;
-                }
-                figure {
-                    width: 60%;
-                    padding-bottom: 100px;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-            }
-        }
-        .advantages {
-            background-color: #343a40;
-            .advan-wrap {
-                padding: 140px 0;
-                @include wid60();
-                h2 {
-                    color: #fff;
-                }
-                ol {
-                    li {
-                        color: #eee;
-                        padding-bottom: 20px;
-                        h3 {
-                            font-size: 2rem;
-                        }
-                    }
-                }
-            }
-        }
-        .next-product {
-            height: 330px;
-            background-color: #111;
-            .next-wrap {
-                padding: 140px 0;
-                @include wid60();
-                p {
-                    font-size: 2.4rem;
-                    line-height: 30px;
-                }
-                a {
-                    font-size: 8rem;
-                    font-weight: 900;
-                    color: #111;
-                    // text-shadow: inset 0 0 2px #fff;
-                    -webkit-text-stroke: 1px #fff;
-                    -ms-filter: -ms-drop-shadow(0px 0px 2px #fff);
-                    transition: all 0.2s ease-in-out;
-                }
-                a:hover {
-                    color: #c6c7cc;
-                    -webkit-text-stroke: 1px #c6c7cc;
-                }
-            }
-        }
+      }
     }
-    footer {
-        background-color: #111;
+    .features {
+      background: #2b3138;
+      > div {
+        padding-top: 140px;
+        padding-bottom: 50px;
+        @include wid60();
+        h2 {
+          color: #fff;
+          padding-bottom: 50px;
+        }
+        figure {
+          width: 60%;
+          padding-bottom: 100px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
     }
+    .advantages {
+      background-color: #343a40;
+      .advan-wrap {
+        padding: 140px 0;
+        @include wid60();
+        h2 {
+          color: #fff;
+        }
+        ol {
+          li {
+            color: #eee;
+            padding-bottom: 20px;
+            h3 {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+    .next-product {
+      height: 330px;
+      background-color: #111;
+      .next-wrap {
+        padding: 140px 0;
+        @include wid60();
+        p {
+          font-size: 2.4rem;
+          line-height: 30px;
+        }
+        a {
+          font-size: 8rem;
+          font-weight: 900;
+          color: #111;
+          // text-shadow: inset 0 0 2px #fff;
+          -webkit-text-stroke: 1px #fff;
+          -ms-filter: -ms-drop-shadow(0px 0px 2px #fff);
+          transition: all 0.2s ease-in-out;
+        }
+        a:hover {
+          color: #c6c7cc;
+          -webkit-text-stroke: 1px #c6c7cc;
+        }
+      }
+    }
+  }
+  footer {
+    background-color: #111;
+  }
 }
 @media (min-width: 768px) and (max-width: 1152px) {
-    body main .productimg .title-wrap {
-        font-size: 5rem;
-    }
+  body main .productimg .title-wrap {
+    font-size: 5rem;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
-    body main .productimg .title-wrap {
-        bottom: 0%;
-        right: 30%;
-        transform: translateX(50%);
+  html {
+    font-size: 8px !important;
+  }
+  body main .productimg .title-wrap {
+    font-size: 4rem !important;
+  }
+  body main .productimg .title-wrap {
+    bottom: 0%;
+    right: 30%;
+    transform: translateX(50%);
+  }
+  body main .line .line-up figure {
+    width: 100%;
+  }
+  body main .features > div figure {
+    width: 100%;
+  }
+  
+  .con-info .product-sum div {
+    display: none;
+  }
+  .line-up {
+    width: 100% !important;
+  }
+  .features > div {
+    width: 100% !important;
+  }
+  .advantages .advan-wrap ol {
+    li {
+      font-size: 0;
+      h3 {
+        font-size: 2rem;
+      }
     }
-    body main .line .line-up figure {
-        width: 100%;
-    }
-    body main .features > div figure {
-        width: 100%;
-    }
+  }
 }

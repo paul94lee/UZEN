@@ -9,6 +9,6 @@ window.addEventListener('load', function () {
             hid.classList.toggle('active');
 
         });
-    }, 100);
+    }, 200);
 
 });

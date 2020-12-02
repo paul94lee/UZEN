@@ -26,8 +26,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
     var benefits = document.querySelectorAll(".benefits > ul > li");
     var beneBtn = document.querySelectorAll(".benefits > ul > li >img");
-    beneBtn.forEach(function (value, key) {
-        beneBtn[key].addEventListener('click', function () {
+    benefits.forEach(function (value, key) {
+        value.addEventListener('click', function () {
             beneBtn[key].classList.toggle('active');
             benefits[key].classList.toggle('active');
         });
